@@ -1,0 +1,12 @@
+x<-seq(-5,5,0.01)
+y<-dnorm(x)
+plot(x,y,type = "l")
+pnorm(0.11)
+pnorm(-0.51)
+pnorm(1.5)-pnorm(0.5)
+
+qnorm(0.975)
+qnorm(0.2358)
+qnorm(0.5+0.33/2)
+z<-dnorm(x,3,0.2)
+lines(x,z,col="red",xlim=c(which.min(z),which.max(z)))
